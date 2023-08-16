@@ -4,10 +4,6 @@ name: Java CI with Maven
 
 # Trigger the workflow on push or pull request, and manually on main branch
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
   workflow_dispatch:
 
 # Create the job to build on Java 17
