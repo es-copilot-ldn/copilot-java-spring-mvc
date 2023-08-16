@@ -73,6 +73,8 @@ public class EmployeeController {
     // @ResponseBody: return the data as the response body
     // @RequestMapping: map this method to a path named /delete/{id}
     // Return value from Employee entity class
+
+    // generate test for this method
     @DeleteMapping("/delete/{id}")
     public String deleteEmployeeById(@PathVariable("id") Long id) {
         employeeRepository.deleteById(id);
