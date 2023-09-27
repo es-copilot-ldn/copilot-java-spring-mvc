@@ -29,6 +29,10 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
+    - name: run gh cli
+      run: |
+        gh issue create --title "Demo" --body "This issue is created by running gh cli"
+
 
 
 
